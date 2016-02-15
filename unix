@@ -1,0 +1,17 @@
+# ==== UNIX Shell =======
+# pwd displys the computer info???? I think???
+# cd This changes directory
+cd cheatsheets
+~/cheatsheets
+# ls lists the contents of a dir
+ls
+All the contents in short form (no info)
+# rm Remove or Delete a file
+rm test.rd would delete the file test.rd
+# ln links something to samething
+# mkdir makes a new directory
+mkdir new would make a new directory in the current directory called new
+# curl I think of it as letting you "See" a url, it grabs all the info from a url and displays it in the shell
+curl "facebook.com" would show you the contents of facebook.com
+# cat prints or displays the contents of a file
+cat filename would print that file to the shell
