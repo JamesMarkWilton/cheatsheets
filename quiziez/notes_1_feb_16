@@ -1,0 +1,47 @@
+These ones have right answers:
+  What does it mean for a command to have a dollar sign in front of it?
+   The $ is a why to tell when a user is imputting rather then output
+  What is a directory?
+   Is a "Folder!" A Folder! Noi but really it is a place where files or other directories are stored
+  What is the command to change directories?
+   The command to cahnge directories is cd
+  What is the command to make a directory?
+   The command to make a directory is mkdir
+  What is the command to list the contents of a directory?
+    l in your version of the shell for a long form or ls for a short form
+    l -a all files (including dot files) l -a -l for all in long form
+    ect
+  What is the command to start vim with a file?
+    you type vim w/ a file name... so vim somefile...no spaces or that is another file
+  What weird symbol is used to represent your home directory?
+    The tilda or "~"
+  What are the two vim modes, and what are they for? (keep it terse)
+    The INSERT mode which is reached by typing i and Normal which is where you start or can be
+    reached via hiiting ESC while in INSERT mode
+  What strings would these match? You can see a visualization at http://regexper.com/
+    ab[cd]ef
+      This would match "abcef" && "abdef"
+    ab[cd]ef[gh]ij
+      This would match "abcefgij" && "abdefhij" && "abcefhij" && "abdefgij"
+
+These ones, the right answer is that you're not talking giberish
+  What patterns do you see in the JSON structures below?
+  (find the balance between terse and descriptive)
+    I see a title or name for what the object is surrounded by qoutes and delimmted via a :
+    I then see a link that that object points to. I see anything that is being replaced has a
+    place holder that is the name of that lets call it variable w/ {} around it some say a link
+    wanted a person it would look like "https://link.com/{person}
+  Ignoring that the data looked different, how many different structures of data were there?
+  ie if you were to make up your syntax (format of characters that make up the data,
+  ie "then you have to have a comma"), how many different types of data would you have to
+  make up syntax for?
+    ?????????
+  If I said "There is a gem named Rails, written by David Heinemeier Hansson, that has been
+  downloaded 60,439,139 times, and is on version 4.2.5.1", what would the JSON structure for
+  that maybe look like?
+   {
+    "name": "Rails",
+    "downloads": "60439139",
+    "authors": "David Heinemeier Hansson",
+    "version": "4.2.5.1",
+}

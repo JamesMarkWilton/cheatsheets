@@ -1,3 +1,8 @@
 repository = git init = creates a repositorty in git
              git add = adds files to rep
               git check
+
+bundler = Is a program that bundles the enviroment and installs the files that are needed to run a ceratin thing like when we
+hadto set-up the tests for the Hashrocket Workshop.
+
+Test = Real users bashing on a prottype long enough to get throughkly aquiated with it with careful moniteiong and follow up results
