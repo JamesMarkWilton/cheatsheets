@@ -1,2 +1,8 @@
 ---
-en-US: {}
+en-US:
+  test:
+    this: This
+    is: Is
+    only: Only
+    a: a
+    test: Test
