@@ -1,0 +1,22 @@
+phraseapp:
+  project_id: d7e4ca638ef3fe70ba16a6547cdf56df
+  file_format: yml
+  push:
+    sources:
+      - file: config/locales/targets/en-US.yml
+        params:
+          locale_id: 43bccf54c5258d15bc1676fa062379b3
+          update_translations: true
+          autotranslate: true
+          skip_upload_tags: true
+  pull:
+    targets:
+      - file: config/locales/en-US.yml
+        params:
+          locale_id: 43bccf54c5258d15bc1676fa062379b3
+          include_unverified_translations: false
+          use_last_reviewed_version: true
+      - file: config/locales/targets/<locale_name>.yml
+        params:
+          include_unverified_translations: false
+          use_last_reviewed_version: true
