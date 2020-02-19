@@ -3,7 +3,7 @@ phraseapp:
   file_format: yml
   push:
     sources:
-      - file: config/locales/targets/en-US.yml
+      - file: config/locales/en-US.yml
         params:
           locale_id: 43bccf54c5258d15bc1676fa062379b3
           update_translations: true
