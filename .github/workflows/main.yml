@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: automerge
-        uses: "JamesMarkWilton/auto_merge_my_pull_requests@development"
+        uses: "JamesMarkWilton/automerge_smartling_pr@master"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
