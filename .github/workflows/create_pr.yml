@@ -1,6 +1,6 @@
 name: create_pr
 on:
-  pull_request:
+  push:
     branches:
       - master
 jobs:
