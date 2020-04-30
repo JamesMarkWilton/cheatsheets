@@ -1,0 +1,4 @@
+test:
+  head: "jw/*"
+fake:
+  head: "jw/*"
