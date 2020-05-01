@@ -1,0 +1,17 @@
+name: AutoMerge
+on:
+  pull_request:
+    branches:
+      - smartling-translations-delivery
+      - translations/*
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Automatically Merge PR
+        uses: plm9606/automerge_actions@1.2.0
+        with:
+          label-name: automerge
+          reviewers-number: 0
+          merge-method: "squash"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
