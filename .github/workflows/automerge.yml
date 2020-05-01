@@ -1,0 +1,25 @@
+name: AutoMerge
+on:
+  pull_request:
+    branches:
+      - smartling-translations-delivery
+      - translations/*
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for build to succeed
+        uses: fountainhead/action-wait-for-check@v1.0.0
+        id: wait-for-build
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          checkName: build
+          ref: github.event.pull_request.head.sha || github.sha
+      - name: AutoMerge
+        if: steps.wait-for-build.outputs.conclusion == 'success'
+        uses: devmasx/merge-branch@v1.1.0
+        with:
+          label_name: 'automerge'
+          target_branch: 'translations/*'
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
