@@ -1,0 +1,14 @@
+name: AutoMerge
+
+on:
+  status:
+    branches: translations_delivery
+
+jobs:
+  mergepal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: maxkomarychev/merge-pal-action@vX.Y.Z
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
