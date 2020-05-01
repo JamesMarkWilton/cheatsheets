@@ -1,3 +1,0 @@
-'some_obj.method' Call a method on the object
-'SomeClass#instance_method' Call the method on a instance of a class
-Edit'~/.pryrc'
