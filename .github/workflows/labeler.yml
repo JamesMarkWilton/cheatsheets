@@ -3,7 +3,7 @@ name: Labeler
 on:
   pull_request:
     branches:
-      - master
+      - translations_branch
 
 jobs:
   label_prs:
