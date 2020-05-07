@@ -1,14 +1,18 @@
-name: automerge
+name: AutoMerge
 on:
   pull_request:
     branches:
       - smartling-translations-delivery
       - translations/*
 jobs:
-  automerge:
+  merge-branch:
     runs-on: ubuntu-latest
     steps:
-      - name: automerge
-        uses: "pascalgn/automerge-action@80acb0f883348dcfd0e526288f7d27a12b9333be"
+      - uses: actions/checkout@master
+      - name: AutoMerge by labeled
+        uses: devmasx/merge-branch@v1.1.0
+        with:
+          label_name: 'automerge'
+          target_branch: 'translations/*'
         env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
